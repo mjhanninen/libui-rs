@@ -1,6 +1,10 @@
 //! Utilities to manage the state of the interface to the libUI bindings.
+// For compatability with older Rust versions
+#[allow(deprecated)]
 use std::sync::atomic::{AtomicBool, Ordering, ATOMIC_BOOL_INIT};
 
+// For compatability with older Rust versions
+#[allow(deprecated)]
 static INITIALIZED: AtomicBool = ATOMIC_BOOL_INIT;
 
 /// Set the global flag stating that libUI is initialized.
